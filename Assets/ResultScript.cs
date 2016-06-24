@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class GoalScript : MonoBehaviour {
+public class ResultScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,11 +11,8 @@ public class GoalScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	
-	}
-
-	void OnCollisionEnter(Collision other){
-		SceneManager.LoadScene ("Goal");
+		if (Input.GetMouseButtonDown (0)) {
+			SceneManager.LoadScene ("Start");
+		}
 	}
 }
