@@ -16,6 +16,7 @@ public class GoalScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision other){
+		if(CheckScript.flag == 3)
 		SceneManager.LoadScene ("Goal");
 	}
 }
