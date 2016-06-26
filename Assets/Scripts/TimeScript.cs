@@ -16,11 +16,11 @@ public class TimeScript : MonoBehaviour {
 	void Update () {
 		timeLimit -= Time.deltaTime;
 		if (timeLimit >= 10) {
-			time.text = "Time : " + timeLimit.ToString ("f2");
+			time.text = " Time : " + timeLimit.ToString ("f2") + " ";
 		}
 		if (timeLimit <= 10) {
 			time.color = Color.red;
-			time.text = "Time : 0" + timeLimit.ToString ("f2");
+			time.text = " Time : 0" + timeLimit.ToString ("f2") + " ";
 		}
 
 		if (timeLimit <= 0) {
