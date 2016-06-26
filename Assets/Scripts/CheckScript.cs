@@ -19,7 +19,6 @@ public class CheckScript : MonoBehaviour {
 	void OnCollisionEnter(Collision other) {
 
 		if (other.gameObject.CompareTag ("Check")) {
-			Debug.Log ("test");
 			flag++;
 			Destroy (other.gameObject);
 		}
