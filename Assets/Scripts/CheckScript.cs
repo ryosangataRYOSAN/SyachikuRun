@@ -6,10 +6,12 @@ public class CheckScript : MonoBehaviour {
 
 	public static int flag = 0;
 	public Text WallCheck;
+	public Text PointCheck;
 
 	// Use this for initialization
 	void Start () {
 		WallCheck.text = "";
+		PointCheck.text = "Point : " + flag.ToString ("");
 	}
 	
 	// Update is called once per frame
@@ -21,6 +23,7 @@ public class CheckScript : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Check")) {
 			flag++;
 			Destroy (other.gameObject);
+			PointCheck.text = "Point : " + flag.ToString ("");
 		}
 	}
 
