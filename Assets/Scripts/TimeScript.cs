@@ -25,6 +25,7 @@ public class TimeScript : MonoBehaviour {
 
 		if (timeLimit <= 0) {
 			SceneManager.LoadScene ("GameOver");
+			timeLimit = 30.0f;
 		}
 	}
 }

@@ -4622,6 +4622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WallCheck: {fileID: 861042330}
   PointCheck: {fileID: 186633579}
+  panel: {fileID: 2112860883}
 --- !u!114 &497809141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27705,6 +27706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WallCheck: {fileID: 0}
   PointCheck: {fileID: 0}
+  panel: {fileID: 0}
 --- !u!1 &1765891735 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100522, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
@@ -30494,6 +30496,7 @@ GameObject:
   - 224: {fileID: 2112860884}
   - 222: {fileID: 2112860886}
   - 114: {fileID: 2112860885}
+  - 114: {fileID: 2112860887}
   m_Layer: 5
   m_Name: Panel (1)
   m_TagString: Untagged
@@ -30551,6 +30554,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2112860883}
+--- !u!114 &2112860887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2112860883}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b4f34df4e27414280251cb45ee393e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113613300 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100140, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
