@@ -502,7 +502,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: feaeb37053e7b954a8cb9eadd6563337, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2228c8d4e415aa04f945dbca3535fa9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2929,7 +2929,7 @@ Transform:
   - {fileID: 557715737}
   - {fileID: 2099532507}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1001 &1821097578
 Prefab:
   m_ObjectHideFlags: 0
