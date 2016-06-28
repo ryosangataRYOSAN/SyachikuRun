@@ -2410,6 +2410,18 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 879451a5e2214f143a7edf5dd3e32020, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 879451a5e2214f143a7edf5dd3e32020, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 879451a5e2214f143a7edf5dd3e32020, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 879451a5e2214f143a7edf5dd3e32020, type: 2}
   m_IsPrefabParent: 0
