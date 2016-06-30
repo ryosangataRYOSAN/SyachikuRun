@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CheckScript : MonoBehaviour {
 
 	public static int flag = 0;
-	public static int a_flag = 0;
+	public static float a_flag = 0;
 	public static int score = 0;
 	float a_color = 1.0f;
 	public Text WallCheck;
@@ -17,21 +17,24 @@ public class CheckScript : MonoBehaviour {
 	void Start () {
 		ScoreText.text = "Score : " +   score.ToString ("");
 		WallCheck.text = "";
-		PointCheck.text = "Point : " + flag.ToString ("");
+		PointCheck.text = "";
 		PointCheck.color = new Color (0,0,0,0);
 		panel.GetComponent<Image>().color = new Color (124/255f,234/255f,1,0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (a_flag == 1) {
+		if (a_flag >= 0.5f) {
+			a_flag -= 0.5f * Time.deltaTime;
+		}else{
 			PointCheck.color = new Color (0, 0, 0, a_color);
-			a_color -= Time.deltaTime;
+			a_color -= 3 * Time.deltaTime;
 			if (a_color <= 0) {
 				a_flag = 0;
 				panel.GetComponent<Image>().color = new Color (124/255f,239/255f,1,0);
 			}
 		}
+
 	}
 
 	void OnCollisionEnter(Collision other) {
@@ -71,7 +74,19 @@ public class CheckScript : MonoBehaviour {
 			PointCheck.text = "改善案の書類を手に入れた";
 			ScoreText.text = "Score : " +   score.ToString ("");
 		}
-	
+
+		if (other.gameObject.CompareTag ("kakugo")) {
+			flag++;
+			score += 500;
+			a_flag = 1; 
+			a_color = 1;
+			Destroy (other.gameObject);
+			PointCheck.color = new Color (0,0,0,1);
+			panel.GetComponent<Image>().color = new Color (124/255f,239/255f,1,1);
+			PointCheck.text = "怒鳴られる覚悟がついた";
+			ScoreText.text = "Score : " +   score.ToString ("");
+		}
+
 	
 	
 	

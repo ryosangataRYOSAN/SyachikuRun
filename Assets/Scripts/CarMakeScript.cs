@@ -3,11 +3,13 @@ using System.Collections;
 
 public class CarMakeScript : MonoBehaviour {
 
-	public GameObject car;
+	public GameObject car1;
+	public GameObject car2;
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("Generate", 0, 5);	
+		InvokeRepeating ("Generate1", 0, 5);
+		InvokeRepeating ("Generate2", 2.5f, 5);
 	}
 	
 	// Update is called once per frame
@@ -15,10 +17,15 @@ public class CarMakeScript : MonoBehaviour {
 	
 	}
 
-	void Generate(){
-		Instantiate (car, transform.position, transform.rotation);
+	void Generate1(){
+		Instantiate (car1, transform.position, transform.rotation);
 		Invoke("DestroyCar", 18);
 }
+
+	void Generate2(){
+		Instantiate (car2, transform.position, transform.rotation);
+		Invoke("DestroyCar", 20);
+	}
 
 	void DestroyCar(){
 		Destroy (this.gameObject);
