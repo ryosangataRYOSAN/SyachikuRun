@@ -17,7 +17,7 @@ public class CarMakeScript : MonoBehaviour {
 
 	void Generate(){
 		Instantiate (car, transform.position, transform.rotation);
-		Invoke("DestroyCar", 5.0f);
+		Invoke("DestroyCar", 18);
 }
 
 	void DestroyCar(){
