@@ -11,14 +11,11 @@ public class startScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
-			//SceneManager.LoadScene ("MainGame");
-		}
+
 	}
 
 	public void ButtonPush(){
-		Debug.Log ("おしたよ");
-		SceneManager.LoadScene ("MainGame");
+		SceneManager.LoadScene ("Entry");
 	}
 
 }
