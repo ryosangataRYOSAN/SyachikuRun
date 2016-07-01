@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TimeScript : MonoBehaviour {
 	public Text time;
-	public static float timeLimit = 1000.0f;
+	public static float timeLimit = 100.0f;
 
 	// Use this for initialization
 	void Start () {
